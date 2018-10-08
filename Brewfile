@@ -89,6 +89,7 @@ cask "vagrant"
 cask "spotify"
 cask "virtualbox"
 cask "font-hack"
+cask "gitify"
 
 # mas
 mas "Xcode", id: 497799835
