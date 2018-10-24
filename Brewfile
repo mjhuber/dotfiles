@@ -71,7 +71,7 @@ brew "pcre"
 brew "xz"
 brew "mas"
 brew "gnu-sed"
-
+brew "kubectx"
 
 # appps
 cask "gpg-suite"
