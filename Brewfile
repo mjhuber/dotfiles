@@ -101,3 +101,4 @@ mas "Pages", id: 409201541
 mas "Reeder", id: 880001334
 mas "Numbers", id: 409203825
 mas "1Password", id: 1333542190
+mas "Magnet", id: 441258766
