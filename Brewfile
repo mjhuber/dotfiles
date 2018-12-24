@@ -5,7 +5,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/dupes"
-
+tap "homebrew/cask-drivers"
 
 
 # binaries
@@ -89,6 +89,7 @@ cask "vagrant"
 cask "spotify"
 cask "virtualbox"
 cask "font-hack"
+cask "sonos"
 
 # mas
 mas "Xcode", id: 497799835
