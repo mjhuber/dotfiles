@@ -91,6 +91,7 @@ cask "spotify"
 cask "virtualbox"
 cask "font-hack"
 cask "sonos"
+cask "bartender"
 
 # mas
 mas "Xcode", id: 497799835
