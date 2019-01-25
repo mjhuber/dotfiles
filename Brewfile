@@ -73,6 +73,7 @@ brew "mas"
 brew "gnu-sed"
 brew "kubectx"
 brew "kubeless"
+brew "hub"
 
 # appps
 cask "gpg-suite"
