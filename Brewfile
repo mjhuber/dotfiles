@@ -6,7 +6,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/dupes"
 tap "homebrew/cask-drivers"
-
+tap "caskroom/cask"
 
 # binaries
 brew "stow"
@@ -83,16 +83,14 @@ cask "visual-studio-code"
 cask "atom"
 cask "postman"
 cask "sublime-text"
-cask "chefdk"
 cask "iterm2"
 cask "firefox"
 cask "keybase"
-cask "vagrant"
 cask "spotify"
-cask "virtualbox"
 cask "font-hack"
 cask "sonos"
 cask "bartender"
+cask "moom"
 
 # mas
 mas "Xcode", id: 497799835
@@ -105,4 +103,3 @@ mas "Pages", id: 409201541
 mas "Reeder", id: 880001334
 mas "Numbers", id: 409203825
 mas "1Password", id: 1333542190
-mas "Magnet", id: 441258766
