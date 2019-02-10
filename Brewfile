@@ -74,6 +74,9 @@ brew "gnu-sed"
 brew "kubectx"
 brew "kubeless"
 brew "hub"
+brew "wireguard-tools"
+brew "yq"
+
 
 # appps
 cask "gpg-suite"
@@ -91,6 +94,8 @@ cask "font-hack"
 cask "sonos"
 cask "bartender"
 cask "moom"
+cask "viscosity"
+
 
 # mas
 mas "Xcode", id: 497799835
