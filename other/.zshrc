@@ -10,14 +10,9 @@ CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
 
-source /usr/local/share/antigen/antigen.zsh
-
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
-# antigen bundles
-antigen bundle git
-antigen bundle zsh-users/zsh-syntax-highlighting
+# oh-my-zsh plugins
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
 
 
 # aliases
@@ -30,10 +25,6 @@ alias tf='terraform'
 alias wgdown='wg-quick down azirevpn-us1'
 alias wgup='wg-quick up azirevpn-us1'
 alias vim='nvim'
-
-# Tell antigen that you're done.
-antigen apply
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/huberm/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/huberm/google-cloud-sdk/path.zsh.inc'; fi
