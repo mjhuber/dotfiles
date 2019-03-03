@@ -1,3 +1,5 @@
+autoload colors
+colors
 
 #exports
 export PATH="$HOME/Library/Python/2.7/bin:$HOME/bin:$PATH"
