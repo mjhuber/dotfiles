@@ -6,6 +6,8 @@ export PATH="$HOME/Library/Python/2.7/bin:$HOME/bin:$PATH"
 export ZSH="/Users/huberm/.oh-my-zsh"
 export LANG='en_US.UTF-8'
 export EDITOR='nvim'
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+
 
 ZSH_THEME="huberm"
 CASE_SENSITIVE="true"
@@ -16,6 +18,8 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(git aws docker kubectl pip helm terraform)
 source $ZSH/oh-my-zsh.sh
 
+# activate syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # aliases
 alias gh='history | grep'

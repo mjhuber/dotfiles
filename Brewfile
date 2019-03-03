@@ -54,6 +54,7 @@ brew "hub"
 brew "wireguard-tools"
 brew "yq"
 brew "zsh"
+brew "zsh-syntax-highlighting"
 
 # appps
 cask "gpg-suite"
