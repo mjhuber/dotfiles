@@ -1,4 +1,17 @@
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.local/share/nvim/plugged')
 
+" Plugins
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+
+" keymaps
+map <C-n> :NERDTreeToggle<CR>
+
+" close NerdTree if it's the only window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 syntax on
 set number
@@ -19,3 +32,4 @@ au BufNewFile,BufRead Jenkinsfile setf groovy
 au BufNewFile,BufRead *.json so ~/.vim/syntax/json.vim
 au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/syntax/yaml.vim
 
+call plug#end()
