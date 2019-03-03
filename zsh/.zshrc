@@ -13,7 +13,7 @@ HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
 
 # oh-my-zsh plugins
-plugins=(git aws docker kubectl pip)
+plugins=(git aws docker kubectl pip helm)
 source $ZSH/oh-my-zsh.sh
 
 

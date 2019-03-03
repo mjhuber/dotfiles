@@ -3,7 +3,7 @@
   email = micah.huber@mailbox.org
 
 [core]
-  editor = vim
+  editor = nvim
   excludesfile = ~/.gitignore_global
 
 [credential]
