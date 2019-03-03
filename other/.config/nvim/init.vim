@@ -6,6 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plugins
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " keymaps
 map <C-n> :NERDTreeToggle<CR>
