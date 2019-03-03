@@ -52,7 +52,6 @@ brew "mpfr"
 brew "ssh-copy-id"
 brew "gdbm"
 brew "node"
-brew "stern"
 brew "gettext"
 brew "terraform"
 brew "git"
@@ -76,7 +75,7 @@ brew "kubeless"
 brew "hub"
 brew "wireguard-tools"
 brew "yq"
-
+brew "zsh"
 
 # appps
 cask "gpg-suite"
