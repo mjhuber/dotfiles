@@ -28,6 +28,11 @@ alias wgdown='wg-quick down azirevpn-us1'
 alias wgup='wg-quick up azirevpn-us1'
 alias vim='nvim'
 alias brews='brew leaves'
+alias aliases='print -rl -- ${(k)aliases} | sort | column'
+
+# use a cache for completions
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/huberm/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/huberm/google-cloud-sdk/path.zsh.inc'; fi
