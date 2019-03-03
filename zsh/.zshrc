@@ -7,7 +7,7 @@ export ZSH="/Users/huberm/.oh-my-zsh"
 export LANG='en_US.UTF-8'
 export EDITOR='nvim'
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="huberm"
 CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
