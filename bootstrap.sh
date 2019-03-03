@@ -28,24 +28,13 @@ if [ -f "Brewfile" ] && [ "$(uname -s)" = "Darwin" ]; then
 
 fi
 
-
 stow -R bash git other vim zsh
-source ~/.bash_profile
-
-
-if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
-    echo "==> Installing vim bundles…"
-    mkdir -p ~/.vim/bundle
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    vim +PluginInstall +qall
-fi
+source ~/.zshrc
 
 count=$(apm list --installed --packages --bare | grep -s sync-settings)
 if [[ $count != 0 ]]; then
     echo "==> Installing atom sync-settings…"
     apm install sync-settings
-    # TODO: setup initial sync config via _private variables?
 fi
-
 
 echo "==> Ready to go!"
