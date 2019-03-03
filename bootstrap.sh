@@ -29,7 +29,7 @@ if [ -f "Brewfile" ] && [ "$(uname -s)" = "Darwin" ]; then
 fi
 
 
-stow -R bash git other vim
+stow -R bash git other vim zsh
 source ~/.bash_profile
 
 
