@@ -24,7 +24,7 @@ set lazyredraw
 set showmatch
 set incsearch
 
-set background=light
+set background=dark
 colorscheme PaperColor
 
 set tabstop=2 shiftwidth=2 expandtab
