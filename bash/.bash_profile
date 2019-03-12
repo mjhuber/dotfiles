@@ -34,3 +34,4 @@ if [ -f '/Users/huberm/google-cloud-sdk/path.bash.inc' ]; then . '/Users/huberm/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/huberm/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/huberm/google-cloud-sdk/completion.bash.inc'; fi
+source /Users/huberm/.pentagon/config
