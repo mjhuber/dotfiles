@@ -1,6 +1,9 @@
 autoload colors
 colors
 
+# load functions
+source ~/.functions
+
 #exports
 export PATH="$HOME/Library/Python/2.7/bin:$HOME/bin:$PATH"
 export ZSH="/Users/huberm/.oh-my-zsh"
@@ -37,7 +40,6 @@ alias wgup='wg-quick up azirevpn-us1'
 alias vim='nvim'
 alias brews='brew leaves'
 alias aliases='print -rl -- ${(k)aliases} | sort | column'
-alias switch='asdf global'
 
 
 # use a cache for completions
@@ -52,3 +54,5 @@ if [ -f '/Users/huberm/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hu
 
 # pentagon
 source ~/.pentagon/config
+
+source /usr/local/opt/asdf/asdf.sh

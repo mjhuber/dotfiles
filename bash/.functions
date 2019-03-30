@@ -1,7 +1,26 @@
-pip() {
-    if [[ $@ == "upgrade" ]]; then
-      command pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
-    else
-      command pip "$@"
+
+
+switch() {
+  plugins="$(asdf plugin-list)"
+
+  if [[ $plugins =~ .*$1.* ]]; then
+    # plugin installed
+
+    version="$(asdf list $1)"
+    if [[ $version != *"$2"* ]]; then
+      # version isn't installed
+      echo "Installing version now."
+      asdf install $1 $2
     fi
+
+    if [[ -f $PWD/.tool-versions ]]; then
+      # local setting
+      asdf local $1 $2
+    else
+      asdf global $1 $2
+    fi
+  else
+    echo "$1 plugin not installed, exiting."
+    exit 1
+  fi
 }
