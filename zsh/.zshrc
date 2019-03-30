@@ -8,6 +8,10 @@ export LANG='en_US.UTF-8'
 export EDITOR='nvim'
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 
+# allow go modules
+export GO111MODULE=on
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH"
 
 ZSH_THEME="huberm"
 CASE_SENSITIVE="true"
@@ -43,3 +47,6 @@ if [ -f '/Users/huberm/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/huberm/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/huberm/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/huberm/google-cloud-sdk/completion.zsh.inc'; fi
+
+# pentagon
+source ~/.pentagon/config
