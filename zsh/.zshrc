@@ -37,6 +37,8 @@ alias wgup='wg-quick up azirevpn-us1'
 alias vim='nvim'
 alias brews='brew leaves'
 alias aliases='print -rl -- ${(k)aliases} | sort | column'
+alias switch='asdf global'
+
 
 # use a cache for completions
 zstyle ':completion:*' use-cache on
