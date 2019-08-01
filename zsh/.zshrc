@@ -22,7 +22,7 @@ HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
 
 # oh-my-zsh plugins
-plugins=(git aws docker kubectl pip helm terraform)
+plugins=(git aws docker kubectl pip terraform)
 source $ZSH/oh-my-zsh.sh
 
 # activate syntax highlighting
