@@ -7,6 +7,7 @@ tap "homebrew/core"
 tap "homebrew/dupes"
 tap "homebrew/cask-drivers"
 tap "caskroom/cask"
+tap "sambadevi/powerlevel9k"
 
 # binaries
 brew "stow"
@@ -56,6 +57,7 @@ brew "yq"
 brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "asdf"
+brew "powerlevel9k"
 
 # appps
 cask "gpg-suite"

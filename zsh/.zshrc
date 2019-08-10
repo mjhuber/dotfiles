@@ -16,10 +16,16 @@ export GO111MODULE=on
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH"
 
-ZSH_THEME="huberm"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(kubecontext)
+
 
 # oh-my-zsh plugins
 plugins=(git aws docker kubectl pip terraform)
