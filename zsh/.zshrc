@@ -16,7 +16,7 @@ export GO111MODULE=on
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH"
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
