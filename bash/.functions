@@ -24,3 +24,4 @@ switch() {
     exit 1
   fi
 }
+

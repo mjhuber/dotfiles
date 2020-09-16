@@ -24,3 +24,10 @@ export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
 # allow go modules
 export GO111MODULE=on
+
+
+export VAULT_ADDR=https://vault.rechargeapps.net:8200
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# vault
+export VAULT_ADDR="https://vault.rechargeapps.net:8200"

@@ -58,6 +58,9 @@ brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "asdf"
 brew "powerlevel9k"
+brew "vault"
+brew "pipenv"
+brew "lastpass-cli"
 
 # appps
 cask "gpg-suite"

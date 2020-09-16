@@ -28,7 +28,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(kubecontext)
 
 
 # oh-my-zsh plugins
-plugins=(git aws docker kubectl pip terraform)
+plugins=(git aws docker pip terraform)
 source $ZSH/oh-my-zsh.sh
 
 # activate syntax highlighting
@@ -58,7 +58,16 @@ if [ -f '/Users/huberm/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/huberm/g
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/huberm/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/huberm/google-cloud-sdk/completion.zsh.inc'; fi
 
-# pentagon
-source ~/.pentagon/config
 
 source /usr/local/opt/asdf/asdf.sh
+
+
+# vault
+export VAULT_ADDR=https://vault.rechargeapps.net:8200
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# asdf
+$(brew --prefix asdf)/asdf.sh

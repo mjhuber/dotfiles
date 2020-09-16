@@ -49,3 +49,6 @@ alias vinstall="vim -i NONE -c VundleUpdate -c quitall"
 # wireguard
 alias wgup="wg-quick up azirevpn-us1"
 alias wgdown="wg-quick down azirevpn-us1"
+
+# vault
+alias vl="vault login -method=ldap username=mhuber"
