@@ -66,6 +66,7 @@ brew "ansible"
 brew "pre-commit"
 brew "mfuentesg/tap/ksd"
 brew "stern"
+brew "FairwindsOps/tap/rbac-lookup"
 
 # appps
 cask "gpg-suite"
