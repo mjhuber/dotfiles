@@ -1,1 +1,6 @@
 vim/.vim/bundle/*
+other/.config
+other/.config/*
+other/.local
+other/.local/*
+other/.local/share/nvim/shada/main.shada

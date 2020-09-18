@@ -1,16 +1,5 @@
 #!/usr/bin/env bash
 
-
-# grep
-alias grep='grep -i'
-alias gh="history | grep"
-
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
-
-# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
-
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
@@ -19,22 +8,33 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 # Finally, clear download history from quarantine. https://mths.be/bum
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias grep='grep -i'
+alias gh="history | grep"
+#kubernetes
+alias k="kubectl"
+alias kns="kubens"
 
-# URL-encode strings
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
-# Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
 
 # ls
 alias ls="ls -G"
 
-#kubernetes
-alias k="kubectl"
-alias kns="kubens"
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
 
 ##Linux specific aliases
 if [[ "$(uname)" != 'Darwin' ]]; then
@@ -52,3 +52,12 @@ alias wgdown="wg-quick down azirevpn-us1"
 
 # vault
 alias vl="vault login -method=ldap username=mhuber"
+
+alias tf='terraform'
+
+alias vim='nvim'
+
+alias brews='brew leaves'
+
+alias aliases='print -rl -- ${(k)aliases} | sort | column'
+

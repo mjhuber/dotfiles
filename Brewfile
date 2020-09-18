@@ -61,6 +61,8 @@ brew "powerlevel9k"
 brew "vault"
 brew "pipenv"
 brew "lastpass-cli"
+brew "nvim"
+brew "ansible"
 
 # appps
 cask "gpg-suite"
@@ -79,7 +81,7 @@ cask "sonos"
 cask "bartender"
 cask "moom"
 cask "viscosity"
-
+cask "lastpass"
 
 # mas
 mas "Xcode", id: 497799835
