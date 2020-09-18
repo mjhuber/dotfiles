@@ -64,6 +64,8 @@ brew "lastpass-cli"
 brew "nvim"
 brew "ansible"
 brew "pre-commit"
+brew "mfuentesg/tap/ksd"
+brew "stern"
 
 # appps
 cask "gpg-suite"
