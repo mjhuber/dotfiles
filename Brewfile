@@ -81,6 +81,7 @@ cask "bartender"
 cask "moom"
 cask "viscosity"
 cask "lastpass"
+cask "google-drive-file-stream"
 
 # mas
 mas "Xcode", id: 497799835
