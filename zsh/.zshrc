@@ -47,8 +47,9 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 eval "$(direnv hook zsh)"
 . $(brew --prefix asdf)/asdf.sh
 
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/huberm/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/huberm/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/huberm/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/huberm/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/huberm/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/huberm/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/huberm/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/huberm/google-cloud-sdk/completion.zsh.inc'; fi

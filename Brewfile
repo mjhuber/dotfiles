@@ -63,6 +63,7 @@ brew "pipenv"
 brew "lastpass-cli"
 brew "nvim"
 brew "ansible"
+brew "pre-commit"
 
 # appps
 cask "gpg-suite"
