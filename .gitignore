@@ -3,4 +3,8 @@ other/.config
 other/.config/*
 other/.local
 other/.local/*
+other/.local/share/*
+other/.local/share/nvim
+other/.local/share/nvim/*
+other/.local/share
 other/.local/share/nvim/shada/main.shada

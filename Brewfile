@@ -69,7 +69,6 @@ cask "gpg-suite"
 cask "google-chrome"
 cask "slack"
 cask "visual-studio-code"
-cask "atom"
 cask "postman"
 cask "sublime-text"
 cask "iterm2"
@@ -88,10 +87,7 @@ mas "Xcode", id: 497799835
 mas "The Unarchiver", id: 425424353
 mas "Keynote", id: 409183694
 mas "iMovie", id: 408981434
-mas "Skitch", id: 425955336
 mas "Bear", id: 1091189122
 mas "Pages", id: 409201541
-mas "Reeder", id: 880001334
 mas "Numbers", id: 409203825
 mas "1Password", id: 1333542190
-mas "Yoink", id: 457622435
