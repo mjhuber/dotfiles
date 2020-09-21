@@ -68,6 +68,7 @@ brew "mfuentesg/tap/ksd"
 brew "stern"
 brew "FairwindsOps/tap/rbac-lookup"
 brew "minamijoyo/tfupdate/tfupdate"
+brew "ack"
 
 # appps
 cask "gpg-suite"
