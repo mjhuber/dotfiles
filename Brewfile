@@ -87,6 +87,7 @@ cask "moom"
 cask "viscosity"
 cask "lastpass"
 cask "google-drive-file-stream"
+cask "typora"
 
 # mas
 mas "Xcode", id: 497799835
