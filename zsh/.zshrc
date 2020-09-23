@@ -36,11 +36,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
 
-
-# vault
-export VAULT_ADDR=https://vault.rechargeapps.net:8200
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
