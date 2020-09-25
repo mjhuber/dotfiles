@@ -35,5 +35,8 @@
 [color]
   ui = true
 
+[pull]
+	rebase = false
+
 [alias]
   aa = add -A
