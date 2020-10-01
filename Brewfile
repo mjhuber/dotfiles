@@ -8,6 +8,7 @@ tap "homebrew/dupes"
 tap "homebrew/cask-drivers"
 tap "caskroom/cask"
 tap "sambadevi/powerlevel9k"
+tap "shopify/shopify"
 
 # binaries
 brew "stow"
@@ -71,6 +72,7 @@ brew "minamijoyo/tfupdate/tfupdate"
 brew "ack"
 brew "terraform-docs"
 brew "skaffold"
+brew "ejson"
 
 # appps
 cask "gpg-suite"
