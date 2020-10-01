@@ -70,6 +70,7 @@ brew "FairwindsOps/tap/rbac-lookup"
 brew "minamijoyo/tfupdate/tfupdate"
 brew "ack"
 brew "terraform-docs"
+brew "skaffold"
 
 # appps
 cask "gpg-suite"
@@ -91,6 +92,7 @@ cask "lastpass"
 cask "google-drive-file-stream"
 cask "typora"
 cask "cheatsheet"
+cask "popclip"
 
 # mas
 mas "Xcode", id: 497799835
