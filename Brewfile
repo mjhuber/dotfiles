@@ -9,6 +9,7 @@ tap "homebrew/cask-drivers"
 tap "caskroom/cask"
 tap "sambadevi/powerlevel9k"
 tap "shopify/shopify"
+tap "gemfury/tap"
 
 # binaries
 brew "stow"
@@ -73,6 +74,7 @@ brew "ack"
 brew "terraform-docs"
 brew "skaffold"
 brew "ejson"
+brew "gemfury"
 
 # appps
 cask "gpg-suite"
