@@ -75,6 +75,7 @@ brew "terraform-docs"
 brew "skaffold"
 brew "ejson"
 brew "gemfury"
+brew "zaquestion/tap/lab"
 
 # appps
 cask "gpg-suite"
