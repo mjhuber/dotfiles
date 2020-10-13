@@ -69,6 +69,7 @@ brew "stern"
 brew "FairwindsOps/tap/rbac-lookup"
 brew "minamijoyo/tfupdate/tfupdate"
 brew "ack"
+brew "zaquestion/tap/lab"
 
 # appps
 cask "gpg-suite"
