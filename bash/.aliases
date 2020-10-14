@@ -61,3 +61,4 @@ alias brews='brew leaves'
 
 alias aliases='print -rl -- ${(k)aliases} | sort | column'
 
+alias git=lab

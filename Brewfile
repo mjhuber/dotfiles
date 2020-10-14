@@ -76,6 +76,7 @@ brew "skaffold"
 brew "ejson"
 brew "gemfury"
 brew "zaquestion/tap/lab"
+brew "helmfile"
 
 # appps
 cask "gpg-suite"
