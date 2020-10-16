@@ -41,3 +41,7 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH"
 
 export EJSON_KEY_DIR="/opt/ejson/keys"
+
+
+# mysql client
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
