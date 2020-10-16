@@ -77,6 +77,7 @@ brew "ejson"
 brew "gemfury"
 brew "zaquestion/tap/lab"
 brew "helmfile"
+brew "mysql-client"
 
 # appps
 cask "gpg-suite"
