@@ -25,3 +25,8 @@ switch() {
   fi
 }
 
+kroll() {
+  deployment="$1"
+  kubectl patch deployment ${deployment} -p \
+    "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
+}
