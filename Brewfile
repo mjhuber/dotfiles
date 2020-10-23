@@ -78,6 +78,7 @@ brew "gemfury"
 brew "zaquestion/tap/lab"
 brew "helmfile"
 brew "mysql-client"
+brew "norwoodj/tap/helm-docs"
 
 # appps
 cask "gpg-suite"
