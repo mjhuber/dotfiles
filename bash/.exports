@@ -45,3 +45,6 @@ export EJSON_KEY_DIR="/opt/ejson/keys"
 
 # mysql client
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+# krew
+export PATH="${PATH}:${HOME}/.krew/bin"

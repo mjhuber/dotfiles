@@ -79,6 +79,7 @@ brew "zaquestion/tap/lab"
 brew "helmfile"
 brew "mysql-client"
 brew "norwoodj/tap/helm-docs"
+brew "krew"
 
 # appps
 cask "gpg-suite"
