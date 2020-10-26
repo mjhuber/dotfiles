@@ -30,3 +30,41 @@ kroll() {
   kubectl patch deployment ${deployment} -p \
     "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
 }
+
+gns() {
+  if [ -z "$1" ]; then
+    echo "gns <project>
+
+    Projects:
+      - stage
+      - infra
+      - prod
+      - kishfra"
+
+    return
+  fi
+
+  case $1 in
+    stage)
+      GCP_PROJECT=recharge-stage-services-8e59
+      CLUSTER=staging
+      ;;
+    infra)
+      GCP_PROJECT=recharge-prod-services-f818
+      CLUSTER=infra
+      ;;
+    prod)
+      GCP_PROJECT=recharge-prod-services-f818
+      ;;
+    kishfra)
+      GCP_PROJECT=recharge-rkish-services-5e8a
+      CLUSTER=kishfra
+      ;;
+  esac
+
+  gcloud config set project $GCP_PROJECT
+
+  if [ -n "$CLUSTER" ]; then
+    kubectx $CLUSTER
+  fi
+}
