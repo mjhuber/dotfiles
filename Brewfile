@@ -10,6 +10,7 @@ tap "caskroom/cask"
 tap "sambadevi/powerlevel9k"
 tap "shopify/shopify"
 tap "gemfury/tap"
+tap "robscott/tap"
 
 # binaries
 brew "stow"
@@ -102,6 +103,7 @@ cask "google-drive-file-stream"
 cask "typora"
 cask "cheatsheet"
 cask "popclip"
+cask "robscott/tap/kube-capacity"
 
 # mas
 mas "Xcode", id: 497799835
