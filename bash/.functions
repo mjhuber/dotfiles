@@ -55,6 +55,7 @@ gns() {
       ;;
     prod)
       GCP_PROJECT=recharge-prod-services-f818
+      CLUSTER=prod
       ;;
     kishfra)
       GCP_PROJECT=recharge-rkish-services-5e8a
