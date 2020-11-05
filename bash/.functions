@@ -50,7 +50,7 @@ gns() {
       CLUSTER=staging
       ;;
     infra)
-      GCP_PROJECT=recharge-prod-services-f818
+      GCP_PROJECT=recharge-infra-services-8b42
       CLUSTER=infra
       ;;
     prod)
