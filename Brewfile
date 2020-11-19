@@ -81,6 +81,7 @@ brew "helmfile"
 brew "mysql-client"
 brew "norwoodj/tap/helm-docs"
 brew "krew"
+brew "bazel"
 
 # appps
 cask "gpg-suite"
