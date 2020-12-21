@@ -1,3 +1,5 @@
 vim/.vim/bundle/**
 other/.local/share/nvim/**
 other/.config/gcloud/**
+!other/.ssh/config
+other/.ssh/**

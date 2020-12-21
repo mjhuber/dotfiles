@@ -52,7 +52,7 @@ gns () {
       CLUSTER=gke_recharge-infra-services-8b42_us-east4_infra  ;;
     (prod) GCP_PROJECT=recharge-prod-services-f818
       CLUSTER=gke_recharge-prod-services-f818_us-east4_prod  ;;
-    (kishfra) GCP_PROJECT=gke_recharge-rkish-services-5e8a_us-east4_kishfra
+    (kishfra) GCP_PROJECT=recharge-rkish-services-5e8a
       CLUSTER=gke_recharge-rkish-services-5e8a_us-east4_kishfra  ;;
   esac
   gcloud config set project $GCP_PROJECT
@@ -60,4 +60,9 @@ gns () {
   then
     kubectx $CLUSTER
   fi
+}
+
+kroll () {
+  deployment="$1"
+  kubectl patch deployment ${deployment} -p "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
 }
