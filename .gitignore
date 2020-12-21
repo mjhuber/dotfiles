@@ -3,3 +3,4 @@ other/.local/share/nvim/**
 other/.config/gcloud/**
 !other/.ssh/config
 other/.ssh/**
+other/.local/share/direnv/**

@@ -37,3 +37,6 @@ export PATH="$PATH:$GOPATH"
 export PATH="$PATH:/opt/homebrew/bin"
 
 export PATH="$(python3 -m site --user-base)/bin:$PATH"
+
+# recharge
+export VAULT_ADDR="https://vault.rechargeapps.net:8200"
