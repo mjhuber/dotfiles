@@ -5,6 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+#typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|stern|istioctl|helmfile'
 autoload colors
 colors
 
@@ -39,9 +41,10 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval "$(direnv hook zsh)"
+eval "$(/Users/huberm/.asdf/shims/direnv hook zsh)"
 . $(brew --prefix asdf)/asdf.sh
 
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/huberm/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/huberm/google-cloud-sdk/path.zsh.inc'; fi

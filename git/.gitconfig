@@ -1,7 +1,7 @@
 [user]
 	name = Micah Huber
 	email = micah@fastmail.us
-	signingkey = 9FBFAD0243D50EE2
+	signingkey = 04087C611C97E9B4
 
 [core]
 	editor = nvim

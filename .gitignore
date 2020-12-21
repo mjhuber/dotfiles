@@ -1,10 +1,3 @@
-vim/.vim/bundle/*
-other/.config
-other/.config/*
-other/.local
-other/.local/*
-other/.local/share/*
-other/.local/share/nvim
-other/.local/share/nvim/*
-other/.local/share
-other/.local/share/nvim/shada/main.shada
+vim/.vim/bundle/**
+other/.local/share/nvim/**
+other/.config/gcloud/**

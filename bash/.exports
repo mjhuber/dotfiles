@@ -32,3 +32,8 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/h
 export GO111MODULE=on
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH"
+
+# temp - m1 homebrew
+export PATH="$PATH:/opt/homebrew/bin"
+
+export PATH="$(python3 -m site --user-base)/bin:$PATH"
