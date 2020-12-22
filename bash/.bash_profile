@@ -36,3 +36,5 @@ if [ -f '/Users/huberm/google-cloud-sdk/path.bash.inc' ]; then . '/Users/huberm/
 if [ -f '/Users/huberm/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/huberm/google-cloud-sdk/completion.bash.inc'; fi
 
 source /Users/huberm/.pentagon/config
+
+export PATH="$HOME/.cargo/bin:$PATH"
