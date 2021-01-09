@@ -4,3 +4,4 @@ other/.config/gcloud/**
 !other/.ssh/config
 other/.ssh/**
 other/.local/share/direnv/**
+other/.config/wireshark/**

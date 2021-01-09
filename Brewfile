@@ -56,6 +56,7 @@ brew "minamijoyo/tfupdate/tfupdate"
 brew "ack"
 brew "zaquestion/tap/lab"
 brew "skaffold"
+brew "cookiecutter"
 
 # appps
 cask "gpg-suite"

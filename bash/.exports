@@ -34,7 +34,7 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH"
 
 # temp - m1 homebrew
-export PATH="$PATH:/opt/homebrew/bin"
+export PATH="$PATH:/opt/homebrew/bin:$HOME/.local/bin"
 
 export PATH="$(python3 -m site --user-base)/bin:$PATH"
 
