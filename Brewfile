@@ -77,12 +77,13 @@ brew "skaffold"
 brew "ejson"
 brew "gemfury"
 brew "zaquestion/tap/lab"
-brew "helmfile"
+#brew "helmfile" install with asdf
 brew "mysql-client"
 brew "norwoodj/tap/helm-docs"
 brew "krew"
 brew "bazel"
 brew "yamllint"
+brew "minamijoyo/tfupdate/tfupdate"
 
 # appps
 cask "gpg-suite"
