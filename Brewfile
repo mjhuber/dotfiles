@@ -83,6 +83,7 @@ brew "norwoodj/tap/helm-docs"
 brew "krew"
 brew "bazel"
 brew "yamllint"
+brew "minamijoyo/tfmigrate/tfmigrate"
 
 # appps
 cask "gpg-suite"
