@@ -45,7 +45,7 @@ gns() {
   fi
 
   case $1 in
-    stage)
+    stage | staging)
       GCP_PROJECT=recharge-stage-services-8e59
       CLUSTER=staging
       ;;
@@ -57,7 +57,7 @@ gns() {
       GCP_PROJECT=recharge-prod-services-f818
       CLUSTER=prod
       ;;
-    kishfra)
+    kishfra | rkish)
       GCP_PROJECT=recharge-rkish-services-5e8a
       CLUSTER=kishfra
       ;;
