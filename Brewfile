@@ -104,7 +104,6 @@ cask "viscosity"
 cask "lastpass"
 cask "google-drive-file-stream"
 cask "typora"
-cask "cheatsheet"
 cask "popclip"
 cask "robscott/tap/kube-capacity"
 
