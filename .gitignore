@@ -5,3 +5,4 @@ other/.config/gcloud/**
 other/.ssh/**
 other/.local/share/direnv/**
 other/.config/wireshark/**
+other/.config/iterm2/**

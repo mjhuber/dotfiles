@@ -57,6 +57,7 @@ brew "ack"
 brew "zaquestion/tap/lab"
 brew "skaffold"
 brew "cookiecutter"
+brew "bat"
 
 # appps
 cask "gpg-suite"
@@ -79,6 +80,6 @@ cask "font-hack"
 #cask "typora"
 #cask "cheatsheet"
 #cask "popclip"
-
+cask "dash"
 # mas
 mas "The Unarchiver", id: 425424353
