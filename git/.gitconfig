@@ -6,6 +6,7 @@
 [core]
 	editor = nvim
   excludesfile = ~/.gitignore_global
+  pager = delta
 
 [credential]
   helper = osxkeychain
@@ -28,6 +29,10 @@
 
 [commit]
 	gpgsign = true
+
+[delta]
+	line-numbers = true
+	side-by-side = true
 
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages

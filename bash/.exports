@@ -28,7 +28,9 @@ export VAULT_ADDR=https://vault.rechargeapps.net:8200
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # vault
-export VAULT_ADDR="https://vault.rechargeapps.net:8200"
+export VAULT_ADDR=https://vault.rechargeapps.net:8200
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
 
 export ZSH="/Users/huberm/.oh-my-zsh"
 export LANG='en_US.UTF-8'

@@ -17,6 +17,9 @@ alias kns="kubens"
 # ack
 alias ack="ack -i"
 
+# cat
+alias cat="bat"
+
 # ls
 alias ls="ls -G"
 
