@@ -28,8 +28,11 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(kubecontext)
 
 
 # oh-my-zsh plugins
-plugins=(git pip)
-source $ZSH/oh-my-zsh.sh
+#plugins=(git pip)
+#source $ZSH/oh-my-zsh.sh
+
+# zsh autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # activate syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

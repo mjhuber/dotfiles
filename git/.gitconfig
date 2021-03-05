@@ -37,3 +37,6 @@
 
 [alias]
   aa = add -A
+
+[url "ssh://git@gitlab.rechargeapps.net/"]
+	insteadOf = https://gitlab.rechargeapps.net/
