@@ -13,7 +13,6 @@ source ~/.functions
 source ~/.aliases
 source ~/.exports
 
-
 ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
@@ -46,3 +45,10 @@ if [ -f '/Users/huberm/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hu
 if [ $commands[helm] ]; then
   source <(helm completion zsh)
 fi
+
+if [ -f ~/.rvm/scripts/rvm ]; then
+  source ~/.rvm/scripts/rvm
+fi
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

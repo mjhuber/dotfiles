@@ -86,7 +86,7 @@ brew "yamllint"
 brew "minamijoyo/tfmigrate/tfmigrate"
 brew "bat"
 brew "git-delta"
-
+brew "the_silver_searcher"
 # appps
 cask "gpg-suite"
 cask "google-chrome"

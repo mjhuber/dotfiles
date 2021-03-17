@@ -38,3 +38,5 @@ if [ -f '/Users/huberm/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/h
 source /Users/huberm/.pentagon/config
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
