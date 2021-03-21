@@ -12,7 +12,8 @@ alias grep='grep -i'
 alias gh="history | grep"
 #kubernetes
 alias k="kubectl"
-alias kns="kubens"
+alias kns="kubie ns"
+alias kctx="kubie ctx"
 
 alias cat="bat"
 

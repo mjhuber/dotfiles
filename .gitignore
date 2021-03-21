@@ -6,3 +6,5 @@ other/.ssh/**
 other/.local/share/direnv/**
 other/.config/wireshark/**
 other/.config/iterm2/**
+other/.config/**
+other/.local/**

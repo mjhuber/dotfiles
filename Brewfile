@@ -58,6 +58,8 @@ brew "zaquestion/tap/lab"
 brew "skaffold"
 brew "cookiecutter"
 brew "bat"
+brew "sshuttle"
+brew "kubie"
 
 # appps
 cask "gpg-suite"
