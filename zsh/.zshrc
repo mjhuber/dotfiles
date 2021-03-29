@@ -50,5 +50,7 @@ if [ -f ~/.rvm/scripts/rvm ]; then
   source ~/.rvm/scripts/rvm
 fi
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
