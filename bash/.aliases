@@ -9,7 +9,7 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
 alias grep='grep -i'
-alias gh="history | grep"
+alias gh="history -f 1 | grep"
 #kubernetes
 alias k="kubectl"
 alias kns="kubens"

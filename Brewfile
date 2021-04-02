@@ -111,6 +111,7 @@ cask "google-drive-file-stream"
 cask "typora"
 cask "popclip"
 cask "robscott/tap/kube-capacity"
+cask "raindropio"
 
 # mas
 mas "Xcode", id: 497799835
