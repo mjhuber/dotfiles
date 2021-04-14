@@ -37,30 +37,34 @@ gns() {
 
     Projects:
       - stage
+      - stage-rq
       - infra
-      - prod
-      - kishfra"
+      - prod"
 
     return
   fi
 
   case $1 in
-    stage | staging)
+    stage | staging | s)
       GCP_PROJECT=recharge-stage-services-8e59
       CLUSTER=staging
       ;;
-    infra)
+    stage-rq | staging-rq | srq)
+      GCP_PROJECT=recharge-stage-services-8e59
+      CLUSTER=staging-rq
+      ;;      
+    infra | i)
       GCP_PROJECT=recharge-infra-services-8b42
       CLUSTER=infra
       ;;
-    prod)
+    prod | p)
       GCP_PROJECT=recharge-prod-services-f818
       CLUSTER=prod
       ;;
-    kishfra | rkish)
-      GCP_PROJECT=recharge-rkish-services-5e8a
-      CLUSTER=kishfra
-      ;;
+    prod-rq | prq)
+      GCP_PROJECT=recharge-prod-services-f818
+      CLUSTER=prod-rq
+      ;;     
   esac
 
   gcloud config set project $GCP_PROJECT
