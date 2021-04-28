@@ -60,6 +60,7 @@ brew "cookiecutter"
 brew "bat"
 brew "sshuttle"
 brew "kubie"
+brew "android-platform-tools"
 
 # appps
 cask "gpg-suite"
