@@ -89,6 +89,7 @@ brew "git-delta"
 brew "the_silver_searcher"
 brew "gopls"
 brew "golangci-lint"
+brew "kubie"
 
 # appps
 cask "gpg-suite"
