@@ -13,6 +13,7 @@ alias gh="history -f 1 | grep"
 #kubernetes
 alias k="kubectl"
 alias kns="kubens"
+alias kssh="kubectl node-shell"
 
 # ack
 alias ack="ack -i"
