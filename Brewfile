@@ -113,6 +113,7 @@ cask "typora"
 cask "popclip"
 cask "robscott/tap/kube-capacity"
 cask "raindropio"
+cask "signal"
 
 # mas
 mas "Xcode", id: 497799835

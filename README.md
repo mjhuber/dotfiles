@@ -14,3 +14,7 @@ To install these dotfiles without Git:
 ```bash
 cd; curl -#L https://github.com/mjhuber/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE-MIT.txt}
 ```
+
+
+# Kubectl plugins
+* [node-shell](https://github.com/kvaps/kubectl-node-shell)
