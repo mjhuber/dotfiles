@@ -38,5 +38,11 @@
 [alias]
   aa = add -A
 
+[pull]
+	rebase = true
+
+[fetch]
+	prune = true
+
 [url "ssh://git@gitlab.rechargeapps.net/"]
 	insteadOf = https://gitlab.rechargeapps.net/
