@@ -91,6 +91,7 @@ brew "gopls"
 brew "golangci-lint"
 brew "kubie"
 brew "shellcheck"
+brew "httpstat"
 
 # appps
 cask "gpg-suite"
