@@ -53,3 +53,6 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# httpstat
+export HTTPSTAT_SHOW_SPEED="true"
