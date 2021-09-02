@@ -47,23 +47,23 @@ gns() {
   case $1 in
     stage | staging | s)
       GCP_PROJECT=recharge-stage-services-8e59
-      CLUSTER=staging
+      CLUSTER=gke_recharge-stage-services-8e59_us-east4_staging
       ;;
     stage-rq | staging-rq | srq)
       GCP_PROJECT=recharge-stage-services-8e59
-      CLUSTER=staging-rq
+      CLUSTER=gke_recharge-stage-services-8e59_us-east4_staging-rq
       ;;      
     infra | i)
       GCP_PROJECT=recharge-infra-services-8b42
-      CLUSTER=infra
+      CLUSTER=gke_recharge-infra-services-8b42_us-east4_infra
       ;;
     prod | p)
       GCP_PROJECT=recharge-prod-services-f818
-      CLUSTER=prod
+      CLUSTER=gke_recharge-prod-services-f818_us-east4_prod
       ;;
     prod-rq | prq)
       GCP_PROJECT=recharge-prod-services-f818
-      CLUSTER=prod-rq
+      CLUSTER=gke_recharge-prod-services-f818_us-east4_prod-rq
       ;;     
   esac
 
