@@ -92,6 +92,7 @@ brew "golangci-lint"
 brew "kubie"
 brew "shellcheck"
 brew "httpstat"
+brew "FairwindsOps/tap/pluto"
 
 # appps
 cask "gpg-suite"
