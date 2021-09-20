@@ -14,6 +14,7 @@ alias gh="history -f 1 | grep"
 alias k="kubectl"
 alias kns="kubens"
 alias kssh="kubectl node-shell"
+alias krun="kubectl run -it testing-huber --image=alpine --requests='cpu=75m,memory=75Mi' --limits='cpu=200m,memory=200Mi' -l cluster-autoscaler.kubernetes.io/safe-to-evict=\"true\" -- /bin/sh"
 
 # ack
 alias ack="ack -i"
