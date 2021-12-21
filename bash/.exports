@@ -56,3 +56,11 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # httpstat
 export HTTPSTAT_SHOW_SPEED="true"
+
+export PATH="$PATH:/usr/local/google-cloud-sdk/bin"
+
+#
+# m1 mac stuff
+#
+
+export PATH="$PATH:/usr/local/homebrew/opt"

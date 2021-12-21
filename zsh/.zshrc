@@ -9,6 +9,13 @@ autoload colors
 colors
 
 
+# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/huberm/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
 source ~/.functions
 source ~/.aliases
 source ~/.exports
@@ -31,16 +38,11 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+. $(brew --prefix asdf)/libexec/asdf.sh
 eval "$(direnv hook zsh)"
-. $(brew --prefix asdf)/asdf.sh
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/huberm/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/huberm/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/huberm/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/huberm/google-cloud-sdk/completion.zsh.inc'; fi
 
 if [ $commands[helm] ]; then
   source <(helm completion zsh)
@@ -59,3 +61,12 @@ setopt appendhistory
 setopt inc_append_history
 # Reloads the history whenever you use it
 setopt share_history
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
