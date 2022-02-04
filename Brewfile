@@ -127,3 +127,5 @@ mas "Bear", id: 1091189122
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
 mas "1Password", id: 1333542190
+mas "Meeter", id: 1510445899
+mas "rcmd", id: 1596283165

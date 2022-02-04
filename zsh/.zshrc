@@ -59,8 +59,10 @@ setopt appendhistory
 
 # Appends every command to the history file once it is executed
 setopt inc_append_history
+
 # Reloads the history whenever you use it
 setopt share_history
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
