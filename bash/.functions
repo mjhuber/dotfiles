@@ -39,7 +39,8 @@ gns() {
       - stage
       - stage-rq
       - infra
-      - prod"
+      - prod
+      - prod-rq"
 
     return
   fi
@@ -77,4 +78,10 @@ gns() {
 krun() {
   trap "kubectl delete po/testing-huber -n default" EXIT
   kubectl run -it testing-huber -n default  --overrides='{"spec":{"containers":[{"name":"testing-huber","tty":true,"args":["/bin/sh"],"stdin":true,"stdinOnce":true,"image":"alpine:latest","resources":{"limits":{"cpu":"200m","memory":"200Mi"},"requests":{"cpu":"200m","memory":"200Mi"}}}]}}' -l cluster-autoscaler.kubernetes.io/safe-to-evict="true" --image=alpine:latest -- /bin/sh
+}
+
+gssh() {
+  IP="$(gcloud compute instances describe ${1} --format=json | jq -r '.networkInterfaces[0].networkIP')"
+  echo "The ip is: ${IP}"
+  ssh ${IP}
 }

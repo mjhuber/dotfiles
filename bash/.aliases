@@ -70,8 +70,6 @@ alias aliases='print -rl -- ${(k)aliases} | sort | column'
 
 alias build-tools='echo gcr.io/recharge-infra-services-8b42/build-tools && gcloud container images list-tags gcr.io/recharge-infra-services-8b42/build-tools --project recharge-infra-services-8b42 --filter "tags ~ ^\d+.\d+.\d+$"'
 
-alias kdebug='k run -it -n default debug-micah --image elementalvoid/net-tools -- /bin/sh'
-
 
 #
 # m1 mac stuff

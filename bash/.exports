@@ -59,7 +59,7 @@ export HTTPSTAT_SHOW_SPEED="true"
 export PATH="$PATH:/usr/local/google-cloud-sdk/bin"
 
 # gitlab
-export GiTLAB_HOST="https://gitlab.rechargeapps.net"
+export GITLAB_HOST="https://gitlab.rechargeapps.net"
 
 #
 # m1 mac stuff
