@@ -20,10 +20,6 @@ export HELM_HOME="$HOME/.helm"
 ## install gems to user dir
 export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
-# allow go modules
-export GO111MODULE=on
-
-
 export VAULT_ADDR=https://vault.rechargeapps.net:8200
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
@@ -40,7 +36,8 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/h
 # allow go modules
 export GO111MODULE=on
 export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH"
+export GOBIN=$GOPATH/bin
+export PATH="$PATH:$GOPATH:$GOBIN"
 
 export EJSON_KEY_DIR="/opt/ejson/keys"
 
@@ -60,6 +57,9 @@ export PATH="$PATH:/usr/local/google-cloud-sdk/bin"
 
 # gitlab
 export GITLAB_HOST="https://gitlab.rechargeapps.net"
+
+# python
+export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 
 #
 # m1 mac stuff
