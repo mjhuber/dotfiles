@@ -93,6 +93,7 @@ brew "kubie"
 brew "shellcheck"
 brew "httpstat"
 brew "FairwindsOps/tap/pluto"
+brew "muzzle"
 
 # appps
 cask "gpg-suite"
