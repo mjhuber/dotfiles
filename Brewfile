@@ -81,6 +81,7 @@ brew "shellcheck"
 brew "httpstat"
 brew "FairwindsOps/tap/pluto"
 brew "cleanshot"
+brew "dive"
 
 # appps
 cask "google-chrome"
@@ -101,6 +102,7 @@ cask "typora"
 cask "popclip"
 cask "signal"
 cask "contexts"
+cask "gpg-suite"
 
 # mas
 mas "The Unarchiver", id: 425424353
