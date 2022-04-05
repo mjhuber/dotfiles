@@ -62,7 +62,6 @@ export GITLAB_HOST="https://gitlab.rechargeapps.net"
 export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 
 #
-# m1 mac stuff
+# m1 mac
 #
-
 export PATH="$PATH:/usr/local/homebrew/opt"
