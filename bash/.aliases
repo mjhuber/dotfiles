@@ -20,7 +20,7 @@ alias neat="kubectl-neat"
 alias ack="ack -i"
 
 # cat
-alias cat="bat"
+alias cat="bat --style=plain"
 
 # ls
 alias ls="ls -G"
