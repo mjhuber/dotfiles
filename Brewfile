@@ -9,10 +9,11 @@ tap "homebrew/cask-drivers"
 tap "caskroom/cask"
 tap "sambadevi/powerlevel9k"
 tap "shopify/shopify"
-tap "gemfury/tap"
 tap "robscott/tap"
 
 # binaries
+brew "cookiecutter"
+brew "gitlab-runner"
 brew "stow"
 brew "grep"
 brew "kind"
@@ -99,7 +100,6 @@ cask "viscosity"
 cask "lastpass"
 cask "google-drive-file-stream"
 cask "typora"
-cask "popclip"
 cask "signal"
 cask "contexts"
 cask "gpg-suite"
@@ -112,3 +112,4 @@ mas "1Password", id: 1333542190
 mas "Meeter", id: 1510445899
 mas "rcmd", id: 1596283165
 mas "GoodLinks", id: 1474335294
+mas "PopClip", id: 445189367

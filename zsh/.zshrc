@@ -68,8 +68,6 @@ setopt inc_append_history
 # Reloads the history whenever you use it
 setopt share_history
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -82,3 +80,5 @@ if [ -f '/Users/huberm/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hu
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+source $HOME/.poetry/env

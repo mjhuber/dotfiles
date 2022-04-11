@@ -60,6 +60,7 @@ export GITLAB_HOST="https://gitlab.rechargeapps.net"
 
 # python
 export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+export PATH="$PATH:$HOME/.poetry/bin"
 
 #
 # m1 mac
