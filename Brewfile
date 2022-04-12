@@ -14,6 +14,7 @@ tap "robscott/tap"
 # binaries
 brew "cookiecutter"
 brew "gitlab-runner"
+brew "bat"
 brew "stow"
 brew "grep"
 brew "kind"
