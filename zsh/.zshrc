@@ -70,6 +70,8 @@ setopt share_history
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
+# zsh-autosuggestions
+# https://github.com/zsh-users/zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -80,5 +82,6 @@ if [ -f '/Users/huberm/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hu
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-
-source $HOME/.poetry/env
+# fast-syntax-highlighting
+# https://github.com/zdharma-continuum/fast-syntax-highlighting
+source ~/.fsh/fast-syntax-highlighting.plugin.zsh

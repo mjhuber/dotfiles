@@ -1,7 +1,7 @@
 [user]
 	name = Micah Huber
 	email = mhuber@rechargeapps.com
-	signingkey = 3F51C7E825A9394A
+	signingkey = A09DE26C92D038C7
 
 [core]
 	editor = nvim
