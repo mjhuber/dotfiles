@@ -12,6 +12,7 @@ tap "shopify/shopify"
 tap "robscott/tap"
 
 # binaries
+brew "yt-music"
 brew "cookiecutter"
 brew "gitlab-runner"
 brew "bat"
@@ -87,6 +88,7 @@ brew "dive"
 brew "pdf-expert"
 
 # appps
+cask "appcleaner"
 cask "google-chrome"
 cask "slack"
 cask "visual-studio-code"
