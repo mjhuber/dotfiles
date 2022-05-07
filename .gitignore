@@ -11,3 +11,4 @@ other/.local/share/nvim/shada/main.shada
 other/.ssh/*
 !other/.ssh/config
 !other/.config/starship.toml
+.secure

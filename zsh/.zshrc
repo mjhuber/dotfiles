@@ -1,8 +1,3 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -25,6 +20,8 @@ source ~/.functions
 source ~/.aliases
 source ~/.exports
 
+[[ ! -f ~/.secure ]] || source ~/.secure
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
@@ -42,7 +39,6 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 . $(brew --prefix asdf)/libexec/asdf.sh
 eval "$(direnv hook zsh)"

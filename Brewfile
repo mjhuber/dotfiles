@@ -12,6 +12,7 @@ tap "shopify/shopify"
 tap "robscott/tap"
 
 # binaries
+brew "glab"
 brew "yt-music"
 brew "cookiecutter"
 brew "gitlab-runner"
