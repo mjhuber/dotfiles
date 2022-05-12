@@ -22,6 +22,8 @@ alias ack="ack -i"
 # cat
 alias cat="bat --style=plain"
 
+alias gti="git"
+
 # ls
 alias ls="ls -G"
 

@@ -16,6 +16,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+. $(brew --prefix asdf)/libexec/asdf.sh
+eval "$(direnv hook zsh)"
+
 source ~/.functions
 source ~/.aliases
 source ~/.exports
@@ -37,9 +40,6 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-. $(brew --prefix asdf)/libexec/asdf.sh
-eval "$(direnv hook zsh)"
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -78,3 +78,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # fast-syntax-highlighting
 # https://github.com/zdharma-continuum/fast-syntax-highlighting
 source ~/.fsh/fast-syntax-highlighting.plugin.zsh
+
+# max open files
+ulimit -n 10240
