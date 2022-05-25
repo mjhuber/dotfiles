@@ -12,6 +12,7 @@ tap "shopify/shopify"
 tap "robscott/tap"
 
 # binaries
+brew "argo"
 brew "cookiecutter"
 brew "gitlab-runner"
 brew "stow"
