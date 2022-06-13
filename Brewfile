@@ -85,6 +85,7 @@ brew "httpstat"
 brew "FairwindsOps/tap/pluto"
 brew "cleanshot"
 brew "dive"
+brew "coreutils"
 
 # appps
 cask "google-chrome"
