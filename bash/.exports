@@ -23,7 +23,7 @@ export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # vault
-export VAULT_ADDR=https://vault.infra.rechargeapps.net
+export VAULT_ADDR=https://vault.infra.rechargeapps.net:443
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 
