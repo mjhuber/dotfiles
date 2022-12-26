@@ -87,6 +87,7 @@ brew "FairwindsOps/tap/pluto"
 brew "cleanshot"
 brew "dive"
 brew "pdf-expert"
+brew "obsidian"
 
 # appps
 cask "appcleaner"
@@ -108,6 +109,7 @@ cask "typora"
 cask "signal"
 cask "contexts"
 cask "gpg-suite"
+cask "dbeaver-community"
 
 # mas
 mas "The Unarchiver", id: 425424353
