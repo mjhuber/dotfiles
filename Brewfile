@@ -88,8 +88,9 @@ brew "cleanshot"
 brew "dive"
 brew "coreutils"
 brew "obsidian"
+brew "oktadeveloper/tap/okta"
 
-# appps
+# apps
 cask "google-chrome"
 cask "slack"
 cask "visual-studio-code"
