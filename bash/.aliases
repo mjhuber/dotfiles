@@ -73,7 +73,7 @@ alias brews='brew leaves'
 alias aliases='print -rl -- ${(k)aliases} | sort | column'
 
 alias build-tools='echo gcr.io/recharge-infra-services-8b42/build-tools && gcloud container images list-tags gcr.io/recharge-infra-services-8b42/build-tools --project recharge-infra-services-8b42 --filter "tags ~ ^\d+.\d+.\d+$"'
-
+alias bt="docker run -it gcr.io/recharge-infra-services-8b42/build-tools:3 /bin/bash"
 
 #
 # m1 mac stuff
