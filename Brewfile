@@ -89,6 +89,7 @@ brew "dive"
 brew "coreutils"
 brew "obsidian"
 brew "oktadeveloper/tap/okta"
+brew "jid"
 
 # apps
 cask "google-chrome"

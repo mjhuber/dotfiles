@@ -61,6 +61,8 @@ export GITLAB_HOST="https://gitlab.rechargeapps.net"
 export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 export PATH="$PATH:$HOME/.poetry/bin"
 
+export USE_GKE_GCLOUD_AUTH_PLUGIN="true"
+
 #
 # m1 mac
 #

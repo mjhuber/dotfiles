@@ -85,4 +85,3 @@ gssh() {
   echo "The ip is: ${IP}"
   ssh ${IP}
 }
-
