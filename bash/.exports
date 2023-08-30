@@ -67,3 +67,4 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN="true"
 # m1 mac
 #
 export PATH="$PATH:/usr/local/homebrew/opt"
+export ASDF_HASHICORP_OVERWRITE_ARCH="amd64"
