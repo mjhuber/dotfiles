@@ -66,3 +66,9 @@ export PATH="$PATH:$HOME/.poetry/bin"
 # m1 mac
 #
 export PATH="$PATH:/usr/local/homebrew/opt"
+
+
+#
+# kubectl
+#
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True

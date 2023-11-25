@@ -88,6 +88,7 @@ brew "cleanshot"
 brew "dive"
 brew "pdf-expert"
 brew "obsidian"
+brew "grishka/grishka/neardrop"
 
 # appps
 cask "appcleaner"
