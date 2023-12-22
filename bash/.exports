@@ -72,3 +72,10 @@ export PATH="$PATH:/usr/local/homebrew/opt"
 # kubectl
 #
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+#
+# elixir
+#
+
+# keeps history of expressions for autocomplete
+export ERL_AFLAGS="-kernel shell_history enabled"
