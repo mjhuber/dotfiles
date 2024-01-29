@@ -65,7 +65,13 @@ gns() {
     prod-rq | prq)
       GCP_PROJECT=recharge-prod-services-f818
       CLUSTER=gke_recharge-prod-services-f818_us-east4_prod-rq
-      ;;     
+      ;;
+    skunk | skw)
+      GCP_PROJECT=recharge-skunk-services-e212
+      CLUSTER=skunk
+      REGION=us-east4
+      CLUSTER=gke_recharge-skunk-services-e212_us-east4_skunk
+      ;;      
   esac
 
   gcloud config set project $GCP_PROJECT

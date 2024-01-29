@@ -1,6 +1,4 @@
 vim/.vim/bundle/*
-other/.config
-other/.config/*
 other/.local
 other/.local/*
 other/.local/share/*
@@ -9,5 +7,3 @@ other/.local/share/nvim/*
 other/.local/share
 other/.local/share/nvim/shada/main.shada
 other/.ssh/*
-!other/.ssh/config
-!other/.config/starship.toml

@@ -28,7 +28,7 @@
 	untracked = cyan
 
 [commit]
-	gpgsign = true
+	gpgsign = false
 
 [delta]
 	line-numbers = true
