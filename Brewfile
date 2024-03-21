@@ -90,6 +90,7 @@ brew "coreutils"
 brew "obsidian"
 brew "oktadeveloper/tap/okta"
 brew "jid"
+brew "bruno"
 
 # apps
 cask "google-chrome"
