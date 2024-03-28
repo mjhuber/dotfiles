@@ -23,6 +23,10 @@ source ~/.functions
 source ~/.aliases
 source ~/.exports
 
+if [ -f ~/.secrets ]; then
+    source ~/.secrets
+fi
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
