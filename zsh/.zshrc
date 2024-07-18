@@ -1,13 +1,5 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 autoload colors
 colors
-
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/huberm/.zshrc'
@@ -27,13 +19,9 @@ if [ -f ~/.secrets ]; then
     source ~/.secrets
 fi
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
-
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 # activate syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -41,11 +29,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # use a cache for completions
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 if [ $commands[helm] ]; then
   source <(helm completion zsh)
@@ -66,7 +49,6 @@ setopt inc_append_history
 # Reloads the history whenever you use it
 setopt share_history
 
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # zsh-autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -85,3 +67,5 @@ source ~/.fsh/fast-syntax-highlighting.plugin.zsh
 
 # max open files
 ulimit -n 10240
+
+eval "$(starship init zsh)"

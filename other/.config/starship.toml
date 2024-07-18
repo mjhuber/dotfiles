@@ -1,0 +1,42 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# format = "$all\n$gcloud$kubernetes $character"
+format = '''
+$all$gcloud$kubernetes $character'''
+
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+[directory]
+truncate_to_repo = false
+
+[gcloud]
+symbol = '️🇬️'
+format = '[$symbol$project]($style) '
+disabled = false
+[gcloud.project_aliases]
+recharge-stage-services-8e59 = 'stage'
+recharge-infra-services-8b42 = 'infra'
+recharge-prod-services-f818 = 'prod'
+
+[docker_context]
+disabled = true
+
+[golang]
+symbol = " "
+
+[helm]
+disabled = true
+
+[kubernetes]
+disabled = false
+format = '[$symbol$context.($namespace)]($style)'
+[[kubernetes.contexts]]
+context_pattern = "gke_.*_(?P<cluster>[\\w-]+)"
+context_alias = "$cluster"
