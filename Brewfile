@@ -91,7 +91,6 @@ brew "obsidian"
 brew "oktadeveloper/tap/okta"
 brew "jid"
 brew "bruno"
-brew "1password-cli"
 
 # apps
 cask "google-chrome"
@@ -112,7 +111,6 @@ cask "typora"
 cask "signal"
 cask "contexts"
 cask "gpg-suite"
-brew "starship"
 
 # mas
 mas "The Unarchiver", id: 425424353
