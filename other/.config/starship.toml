@@ -40,6 +40,3 @@ format = '[$symbol$context.($namespace)]($style)'
 [[kubernetes.contexts]]
 context_pattern = "gke_.*_(?P<cluster>[\\w-]+)"
 context_alias = "$cluster"
-
-[package]
-disabled = true
