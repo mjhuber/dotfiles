@@ -57,10 +57,6 @@ fi
 # vundle
 alias vinstall="vim -i NONE -c VundleUpdate -c quitall"
 
-# wireguard
-alias wgup="wg-quick up azirevpn-us1"
-alias wgdown="wg-quick down azirevpn-us1"
-
 # vault
 alias vl="vault login -method=ldap username=mhuber"
 
@@ -72,8 +68,7 @@ alias brews='brew leaves'
 
 alias aliases='print -rl -- ${(k)aliases} | sort | column'
 
-alias build-tools='echo gcr.io/recharge-infra-services-8b42/build-tools && gcloud container images list-tags gcr.io/recharge-infra-services-8b42/build-tools --project recharge-infra-services-8b42 --filter "tags ~ ^\d+.\d+.\d+$"'
-alias bt="docker run -it gcr.io/recharge-infra-services-8b42/build-tools:3 /bin/bash"
+alias bt="docker run -it us-docker.pkg.dev/recharge-infra-services-8b42/gcr.io/build-tools:3 /bin/bash"
 
 #
 # m1 mac stuff

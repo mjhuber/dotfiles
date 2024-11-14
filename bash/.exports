@@ -63,6 +63,9 @@ export PATH="$PATH:$HOME/.poetry/bin"
 
 export USE_GKE_GCLOUD_AUTH_PLUGIN="true"
 
+# goland
+export PATH="$PATH:/Applications/GoLand.app/Contents/MacOS"
+
 #
 # m1 mac
 #
