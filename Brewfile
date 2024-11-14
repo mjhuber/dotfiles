@@ -15,7 +15,6 @@ tap "robscott/tap"
 brew "glab"
 brew "yt-music"
 brew "cookiecutter"
-brew "gitlab-runner"
 brew "bat"
 brew "stow"
 brew "grep"
@@ -61,7 +60,6 @@ brew "zsh-syntax-highlighting"
 brew "asdf"
 brew "vault"
 brew "pipenv"
-brew "lastpass-cli"
 brew "nvim"
 brew "ansible"
 brew "pre-commit"
@@ -88,9 +86,8 @@ brew "cleanshot"
 brew "dive"
 brew "pdf-expert"
 brew "obsidian"
-brew "grishka/grishka/neardrop"
 
-# appps
+# apps
 cask "appcleaner"
 cask "google-chrome"
 cask "slack"
@@ -111,13 +108,13 @@ cask "signal"
 cask "contexts"
 cask "gpg-suite"
 cask "dbeaver-community"
+cask "wezterm"
 
 # mas
 mas "The Unarchiver", id: 425424353
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
 mas "1Password", id: 1333542190
-mas "Meeter", id: 1510445899
 mas "rcmd", id: 1596283165
 mas "GoodLinks", id: 1474335294
 mas "PopClip", id: 445189367

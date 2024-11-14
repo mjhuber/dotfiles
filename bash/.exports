@@ -20,15 +20,11 @@ export HELM_HOME="$HOME/.helm"
 ## install gems to user dir
 export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
-export VAULT_ADDR=https://vault.rechargeapps.net:8200
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
 # vault
 export VAULT_ADDR=https://vault.rechargeapps.net:8200
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 
-export ZSH="/Users/huberm/.oh-my-zsh"
 export LANG='en_US.UTF-8'
 export EDITOR='nvim'
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
@@ -79,3 +75,6 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # keeps history of expressions for autocomplete
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+# wezterm
+export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH"
