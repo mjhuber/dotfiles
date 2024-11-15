@@ -5,10 +5,13 @@ wezterm.time.call_after(600, function()
 	wezterm.reload_configuration()
 end)
 
+
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
 config.font_size = 14.0
+config.color_scheme = 'MaterialDesignColors'
+config.window_background_opacity = 1.00
 
 config.keys = {
     -- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
@@ -19,6 +22,12 @@ config.keys = {
     {key="p", mods="CMD",action = wezterm.action.ActivateCommandPalette,},
     -- CMD + Shift + C activate copy mode
     {key="c", mods="CMD|SHIFT", action=wezterm.action.ActivateCopyMode,},
-}
+    -- CMD + D split pane vertically
+    {key = 'd',mods = 'CMD',action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },},
+    -- CMD + Shift + D split pane horizontally
+    {key = 'd',mods = 'CMD|SHIFT',action = wezterm.action.SplitPane {direction = 'Right',size = { Percent = 50 },},
+    },
+
+  }
 
 return config
