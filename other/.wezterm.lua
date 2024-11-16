@@ -10,6 +10,12 @@ end)
 local config = wezterm.config_builder()
 
 config.font_size = 14.0
+
+config.font = wezterm.font_with_fallback {
+  'MesloLGS NF',
+  'JetBrains Mono',
+}
+
 config.color_scheme = 'MaterialDesignColors'
 config.window_background_opacity = 1.00
 
@@ -40,9 +46,11 @@ config.keys = {
     -- CMD + D split pane vertically
     {key = 'd',mods = 'CMD',action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },},
     -- CMD + Shift + D split pane horizontally
-    {key = 'd',mods = 'CMD|SHIFT',action = wezterm.action.SplitPane {direction = 'Right',size = { Percent = 50 },},
-    },
-
+    {key = 'd',mods = 'CMD|SHIFT',action = wezterm.action.SplitPane {direction = 'Right',size = { Percent = 50 },},},
+    -- CMD + Left Arrow move to beginning of line
+    {key = 'LeftArrow',mods = 'CMD',action = wezterm.action { SendString = "\x1bOH" },},
+    -- CMD + Right Arrow move to end of line
+    {key = 'RightArrow',mods = 'CMD',action = wezterm.action { SendString = "\x1bOF" },},
   }
 
 return config
