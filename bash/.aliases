@@ -15,6 +15,8 @@ alias k="kubectl"
 alias kns="kubens"
 alias kssh="kubectl node-shell"
 alias neat="kubectl-neat"
+alias kubens="KUBECTX_IGNORE_FZF=1 kubens"
+
 
 # ack
 alias ack="ack -i"
@@ -53,10 +55,6 @@ fi
 # vundle
 alias vinstall="vim -i NONE -c VundleUpdate -c quitall"
 
-# wireguard
-alias wgup="wg-quick up azirevpn-us1"
-alias wgdown="wg-quick down azirevpn-us1"
-
 # vault
 alias vl="vault login -method=ldap username=mhuber"
 
@@ -68,15 +66,6 @@ alias brews='brew leaves'
 
 alias aliases='print -rl -- ${(k)aliases} | sort | column'
 
-alias build-tools='echo gcr.io/recharge-infra-services-8b42/build-tools && gcloud container images list-tags gcr.io/recharge-infra-services-8b42/build-tools --project recharge-infra-services-8b42 --filter "tags ~ ^\d+.\d+.\d+$"'
+alias bt="docker run -it us-docker.pkg.dev/recharge-infra-services-8b42/gcr.io/build-tools:3 /bin/bash"
 
-
-#
-# m1 mac stuff
-#
-
-# for intel x86_64 brew
-alias xbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
-alias xpip3="arch -x86_64 $(xbrew --prefix python@3.7)/bin/pip3"
-alias xpython3="$(xbrew --prefix python@3.7)/bin/python3"
-alias pipenv="arch -x86_64 ~/Library/Python/3.7/bin/pipenv --python $(xbrew --prefix python@3.7)/bin/python3"
+alias gti="git"

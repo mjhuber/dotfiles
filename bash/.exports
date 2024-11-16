@@ -1,80 +1,28 @@
 #!/usr/bin/env bash
-
-
-# Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
-export PYTHONIOENCODING='UTF-8';
-
-# Prefer US English and use UTF-8.
+export EDITOR='nvim'
+export EJSON_KEY_DIR="/opt/ejson/keys"
+export ERL_AFLAGS="-kernel shell_history enabled"
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+export GITLAB_HOST="https://gitlab.rechargeapps.net"
+export GOBIN=$GOPATH/bin
+export GOPATH="$HOME/go"
+export GO111MODULE=on
+export GPG_TTY=$(tty);
+export HELM_HOME="$HOME/.helm"
+export HTTPSTAT_SHOW_SPEED="true"
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
-
-# Highlight section titles in manual pages.
 export LESS_TERMCAP_md="${yellow}";
-
-# Avoid issues with `gpg` as installed via Homebrew.
-# https://stackoverflow.com/a/42265848/96656
-export GPG_TTY=$(tty);
-
-export HELM_HOME="$HOME/.helm"
-
-## install gems to user dir
-export GEM_HOME=$(ruby -e 'print Gem.user_dir')
-
-# vault
-export VAULT_ADDR=https://vault.rechargeapps.net:8200
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
-
-export LANG='en_US.UTF-8'
-export EDITOR='nvim'
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
-
-# allow go modules
-export GO111MODULE=on
-export GOPATH="$HOME/go"
-export GOBIN=$GOPATH/bin
 export PATH="$PATH:$GOPATH:$GOBIN"
-
-export EJSON_KEY_DIR="/opt/ejson/keys"
-
-
-# mysql client
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-
-# krew
 export PATH="${PATH}:${HOME}/.krew/bin"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-# httpstat
-export HTTPSTAT_SHOW_SPEED="true"
 export PATH="$PATH:/usr/local/google-cloud-sdk/bin"
-
-# gitlab
-export GITLAB_HOST="https://gitlab.rechargeapps.net"
-
-# python
-export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 export PATH="$PATH:$HOME/.poetry/bin"
-
-#
-# m1 mac
-#
 export PATH="$PATH:/usr/local/homebrew/opt"
-
-
-#
-# kubectl
-#
-export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-
-#
-# elixir
-#
-
-# keeps history of expressions for autocomplete
-export ERL_AFLAGS="-kernel shell_history enabled"
-
-# wezterm
 export PATH="/Applications/WezTerm.app/Contents/MacOS:$PATH"
+export PYTHONIOENCODING='UTF-8';
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+export VAULT_ADDR=https://vault.infra.rechargeapps.net:8200
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters

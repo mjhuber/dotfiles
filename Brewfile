@@ -86,6 +86,9 @@ brew "cleanshot"
 brew "dive"
 brew "pdf-expert"
 brew "obsidian"
+brew "argo"
+brew "fzf"
+brew "bruno"
 
 # apps
 cask "appcleaner"
@@ -93,22 +96,19 @@ cask "google-chrome"
 cask "slack"
 cask "visual-studio-code"
 cask "postman"
-cask "sublime-text"
 cask "iterm2"
 cask "firefox"
 cask "font-hack"
 cask "sonos"
 cask "bartender"
 cask "moom"
-cask "viscosity"
-cask "lastpass"
 cask "google-drive-file-stream"
-cask "typora"
 cask "signal"
 cask "contexts"
 cask "gpg-suite"
 cask "dbeaver-community"
 cask "wezterm"
+cask "typora"
 
 # mas
 mas "The Unarchiver", id: 425424353
@@ -117,4 +117,3 @@ mas "Numbers", id: 409203825
 mas "1Password", id: 1333542190
 mas "rcmd", id: 1596283165
 mas "GoodLinks", id: 1474335294
-mas "PopClip", id: 445189367

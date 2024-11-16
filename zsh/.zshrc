@@ -21,6 +21,7 @@ source ~/.aliases
 source ~/.exports
 
 [[ ! -f ~/.secure ]] || source ~/.secure
+[[ ! -f ~/.secrets ]] || source ~/.secrets
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 CASE_SENSITIVE="true"
@@ -81,3 +82,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # fast-syntax-highlighting
 # https://github.com/zdharma-continuum/fast-syntax-highlighting
 source ~/.fsh/fast-syntax-highlighting.plugin.zsh
+
+# max open files
+ulimit -n 10240

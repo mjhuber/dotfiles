@@ -45,3 +45,7 @@
 
 [alias]
   aa = add -A
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+
+[push]
+  autoSetupRemote = true
