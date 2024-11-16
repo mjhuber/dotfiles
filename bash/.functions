@@ -1,34 +1,8 @@
-
-
-switch() {
-  plugins="$(asdf plugin-list)"
-
-  if [[ $plugins =~ .*$1.* ]]; then
-    # plugin installed
-
-    version="$(asdf list $1)"
-    if [[ $version != *"$2"* ]]; then
-      # version isn't installed
-      echo "Installing version now."
-      asdf install $1 $2
-    fi
-
-    if [[ -f $PWD/.tool-versions ]]; then
-      # local setting
-      asdf local $1 $2
-    else
-      asdf global $1 $2
-    fi
-  else
-    echo "$1 plugin not installed, exiting."
-    exit 1
-  fi
-}
-
-kroll() {
-  deployment="$1"
-  kubectl patch deployment ${deployment} -p \
-    "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
+cover () {
+    local t=$(mktemp -t cover)
+    go test $COVERFLAGS -coverprofile=$t $@ \
+        && go tool cover -func=$t \
+        && unlink $t
 }
 
 gns() {
@@ -81,20 +55,44 @@ gns() {
   fi
 }
 
-krun() {
-  trap "kubectl delete po/testing-huber -n default" EXIT
-  kubectl run -it testing-huber -n default --overrides='{"metadata":{"labels":{"rechargeapps.net/env":"testing-huber","rechargeapps.net/app":"testing-huber","rechargeapps.net/org":"infra","rechargeapps.net/service":"debug","rechargeapps.net/source":"na","rechargeapps.net/team":"devops"}},"spec":{"containers":[{"name":"testing-huber","tty":true,"args":["/bin/sh"],"stdin":true,"stdinOnce":true,"image":"alpine:latest","resources":{"limits":{"cpu":"200m","memory":"200Mi"},"requests":{"cpu":"200m","memory":"200Mi"}}}]}}' -l cluster-autoscaler.kubernetes.io/safe-to-evict="true" --image=alpine:latest -- /bin/sh
-}
-
 gssh() {
   IP="$(gcloud compute instances describe ${1} --format=json | jq -r '.networkInterfaces[0].networkIP')"
   echo "The ip is: ${IP}"
   ssh ${IP}
 }
 
-cover () {
-    local t=$(mktemp -t cover)
-    go test $COVERFLAGS -coverprofile=$t $@ \
-        && go tool cover -func=$t \
-        && unlink $t
+kroll() {
+  deployment="$1"
+  kubectl patch deployment ${deployment} -p \
+    "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
+}
+
+krun() {
+  trap "kubectl delete po/testing-huber -n default" EXIT
+  kubectl run -it testing-huber -n default --overrides='{"metadata":{"labels":{"rechargeapps.net/env":"testing-huber","rechargeapps.net/app":"testing-huber","rechargeapps.net/org":"infra","rechargeapps.net/service":"debug","rechargeapps.net/source":"na","rechargeapps.net/team":"devops"}},"spec":{"containers":[{"name":"testing-huber","tty":true,"args":["/bin/sh"],"stdin":true,"stdinOnce":true,"image":"alpine:latest","resources":{"limits":{"cpu":"200m","memory":"200Mi"},"requests":{"cpu":"200m","memory":"200Mi"}}}]}}' -l cluster-autoscaler.kubernetes.io/safe-to-evict="true" --image=alpine:latest -- /bin/sh
+}
+
+switch() {
+  plugins="$(asdf plugin-list)"
+
+  if [[ $plugins =~ .*$1.* ]]; then
+    # plugin installed
+
+    version="$(asdf list $1)"
+    if [[ $version != *"$2"* ]]; then
+      # version isn't installed
+      echo "Installing version now."
+      asdf install $1 $2
+    fi
+
+    if [[ -f $PWD/.tool-versions ]]; then
+      # local setting
+      asdf local $1 $2
+    else
+      asdf global $1 $2
+    fi
+  else
+    echo "$1 plugin not installed, exiting."
+    exit 1
+  fi
 }
