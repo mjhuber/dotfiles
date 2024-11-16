@@ -13,6 +13,21 @@ config.font_size = 14.0
 config.color_scheme = 'MaterialDesignColors'
 config.window_background_opacity = 1.00
 
+config.colors = {
+  background = '#3b3939',
+
+  tab_bar = {
+    inactive_tab = {
+      bg_color = "#2e2d2d",
+      fg_color = '#b0aeae',
+    },
+    active_tab = {
+      bg_color = "#786f6f",
+      fg_color = '#ffffff',
+    },
+  },
+}
+
 config.keys = {
     -- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
     {key="LeftArrow", mods="OPT", action=wezterm.action{SendString="\x1bb"}},
