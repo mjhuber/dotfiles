@@ -11,4 +11,7 @@ other/.local/share/nvim/shada/main.shada
 other/.ssh/*
 !other/.ssh/config
 !other/.config/starship.toml
+!other/.config/zed/themes
+!other/.config/zed/keymap.json
+!other/.config/zed/settings.json
 .secure
