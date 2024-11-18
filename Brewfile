@@ -118,3 +118,4 @@ mas "1Password", id: 1333542190
 mas "Meeter", id: 1510445899
 mas "rcmd", id: 1596283165
 mas "GoodLinks", id: 1474335294
+mas "JuxtaText", id: 2085132727
