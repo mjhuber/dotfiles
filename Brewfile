@@ -89,6 +89,7 @@ brew "obsidian"
 brew "argo"
 brew "fzf"
 brew "bruno"
+brew "eza"
 
 # apps
 cask "appcleaner"
