@@ -26,4 +26,8 @@ fi
 
 stow -R bash git other vim zsh
 source ~/.zshrc
+
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+atuin login -u huberm
+atuin import zsh
 echo "==> Ready to go!"

@@ -5,10 +5,12 @@ alias brews='brew leaves'
 alias bt="docker run -it us-docker.pkg.dev/recharge-infra-services-8b42/gcr.io/build-tools:3 /bin/bash"
 alias cat="bat --style=plain"
 alias grep='grep -i'
-alias gh="history -f 1 | grep"
+#alias gh="history -f 1 | grep"
+alias gh="atuin search"
 alias gti="git"
 # hide hidden files in Finder
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias history="atuin history list"
 alias k="kubectl"
 alias kns="kubens"
 alias kssh="kubectl node-shell"
