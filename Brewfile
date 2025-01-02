@@ -92,6 +92,7 @@ brew "oktadeveloper/tap/okta"
 brew "jid"
 brew "bruno"
 brew "popclip"
+brew "eza"
 
 # apps
 cask "google-chrome"

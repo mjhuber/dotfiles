@@ -1,81 +1,35 @@
 #!/usr/bin/env bash
-
-# Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
-# Empty the Trash on all mounted volumes and the main HDD.
-# Also, clear Apple’s System Logs to improve shell startup speed.
-# Finally, clear download history from quarantine. https://mths.be/bum
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
-
+alias ack="ag"
+alias aliases='print -rl -- ${(k)aliases} | sort | column'
+alias brews='brew leaves'
+alias bt="docker run -it us-docker.pkg.dev/recharge-infra-services-8b42/gcr.io/build-tools:3 /bin/bash"
+alias cat="bat --style=plain"
 alias grep='grep -i'
-alias gh="history -f 1 | grep"
-#kubernetes
+#alias gh="history -f 1 | grep"
+alias gh="atuin search"
+alias gti="git"
+# hide hidden files in Finder
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias history="atuin history list"
 alias k="kubectl"
 alias kns="kubens"
-alias kubens="KUBECTX_IGNORE_FZF=1 kubens"
-alias kubectx="KUBECTX_IGNORE_FZF=1 kubectx"
 alias kssh="kubectl node-shell"
+alias kubens="KUBECTX_IGNORE_FZF=1 kubens"
+alias ls="eza"
 alias neat="kubectl-neat"
-
-# ack
-alias ack="ack -i"
-
-# cat
-alias cat="bat --style=plain"
-
-alias gti="git"
-
-# ls
-alias ls="ls -G"
-
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
-
-# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
-# URL-encode strings
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
-
-
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
-
-##Linux specific aliases
 if [[ "$(uname)" != 'Darwin' ]]; then
   alias pbcopy='xclip -selection clipboard'
   alias pbpaste='xclip -selection clipboard -o'
 fi
-
-
-# vundle
-alias vinstall="vim -i NONE -c VundleUpdate -c quitall"
-
-# vault
-alias vl="vault login -method=ldap username=mhuber"
-
+# show hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
 alias tf='terraform'
-
 alias vim='nvim'
-
-alias brews='brew leaves'
-
-alias aliases='print -rl -- ${(k)aliases} | sort | column'
-
+alias vinstall="vim -i NONE -c VundleUpdate -c quitall"
+alias vl="vault login -method=ldap username=mhuber"
 alias bt="docker run -it us-docker.pkg.dev/recharge-infra-services-8b42/gcr.io/build-tools:3 /bin/bash"
-
-#
-# m1 mac stuff
-#
-
-# for intel x86_64 brew
-alias xbrew='arch -x86_64 /usr/local/homebrew/bin/brew'
-alias xpip3="arch -x86_64 $(xbrew --prefix python@3.9)/bin/pip3.9"
-alias xpython3="$(xbrew --prefix python@3.9)/bin/python3"
-alias pipenv="arch -x86_64 ~/Library/Python/3.9/bin/pipenv --python $(xbrew --prefix python@3.9)/bin/python3.9"

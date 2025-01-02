@@ -85,3 +85,6 @@ source ~/.fsh/fast-syntax-highlighting.plugin.zsh
 
 # max open files
 ulimit -n 10240
+
+. "$HOME/.atuin/bin/env"
+eval "$(atuin init zsh)"

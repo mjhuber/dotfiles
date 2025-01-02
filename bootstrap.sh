@@ -37,4 +37,7 @@ if [[ $count != 0 ]]; then
     apm install sync-settings
 fi
 
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+atuin login -u huberm
+atuin import zsh
 echo "==> Ready to go!"

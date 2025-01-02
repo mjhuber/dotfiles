@@ -1,4 +1,9 @@
-
+cover () {
+    local t=$(mktemp -t cover)
+    go test $COVERFLAGS -coverprofile=$t $@ \
+        && go tool cover -func=$t \
+        && unlink $t
+}
 
 switch() {
   plugins="$(asdf plugin-list)"
@@ -53,7 +58,7 @@ gns() {
     stage-rq | staging-rq | srq)
       GCP_PROJECT=recharge-stage-services-8e59
       CLUSTER=gke_recharge-stage-services-8e59_us-east4_staging-rq
-      ;;      
+      ;;
     infra | i)
       GCP_PROJECT=recharge-infra-services-8b42
       CLUSTER=gke_recharge-infra-services-8b42_us-east4_infra
@@ -71,7 +76,7 @@ gns() {
       CLUSTER=skunk
       REGION=us-east4
       CLUSTER=gke_recharge-skunk-services-e212_us-east4_skunk
-      ;;      
+      ;;
   esac
 
   gcloud config set project $GCP_PROJECT
