@@ -87,4 +87,4 @@ source ~/.fsh/fast-syntax-highlighting.plugin.zsh
 ulimit -n 10240
 
 . "$HOME/.atuin/bin/env"
-eval "$(atuin init zsh)"
+eval "$(atuin init zsh --disable-up-arrow)"
